@@ -1,0 +1,4 @@
+Put the official logos here:
+  pumpfun.png
+  dexscreener.png
+Square PNGs work best (e.g. 128x128). Until they exist, the site shows a generic icon.

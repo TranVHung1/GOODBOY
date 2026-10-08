@@ -25,17 +25,16 @@ Deploy: push to GitHub and import into Vercel (framework preset: **Vite**). No s
 | Pet power / offline cap / math | `src/game/engine.ts` |
 | Colors, fonts, layout | `src/styles.css` |
 
-## Contract address (CA)
+## Contract address (CA), pump.fun & DEX Screener
 
-After launching on pump.fun, open `src/config/token.ts` and paste the address:
+Everything lives in `src/config/token.ts`.
 
-```ts
-CA: 'YOUR_PUMPFUN_CA_HERE',
-```
+- **Before launch** (`CA: ''`): the site shows **CA: NOT ANNOUNCED YET** and greyed-out PUMP.FUN / DEXSCREENER buttons marked SOON.
+- **After launch**: paste the address → `CA: 'YOUR_CA'`. You get a copy button, and the PUMP.FUN and DEXSCREENER buttons link to the coin automatically.
+- Optional `x` and `telegram` links appear as extra buttons when filled in.
+- **Logos**: save the official logos as `public/art/logos/pumpfun.png` and `public/art/logos/dexscreener.png`. Until those files exist, a generic icon is shown.
 
-A copyable CA strip and a PUMP.FUN link then appear under the GOODBOY title (the link is built from the CA automatically).
-Optional: fill in `x` and `telegram` links in the same file. While `CA` is empty nothing is shown.
-Then commit + push → Vercel redeploys.
+Commit + push → Vercel redeploys.
 
 ## Art
 
